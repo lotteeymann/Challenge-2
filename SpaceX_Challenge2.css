@@ -1,0 +1,129 @@
+html{
+	background: url(Achtergrond.jpeg) no-repeat center center fixed;
+	background-size: cover;
+	/*afbeelding als achtergrond gebruiken. Instellen dat 'ie in het midden staat, zichzelf niet herhaald en geschaald wordt over de hele achtergrond.*/
+}
+
+.Title{
+	margin: 10px;
+	padding: 10px;
+	/*ruimte rondom logo voor overzicht in design*/
+}
+
+img{
+	width: 200px;
+	margin: 20px;
+	/*Grootte van SpaceX logo bepalen*/
+	transition-duration: 3s;
+}
+
+#Button{
+	background: rgb(255, 255, 255, 0.4);
+	border-style: none;
+	border-color: rgb(255, 255, 255);
+	border-radius: 5px;
+	padding: 10px;
+	cursor: pointer;
+	margin-top: 20px;
+	text-align: center;
+	font-family: Arial Black;
+	text-transform: uppercase;
+	color: rgb(255, 255, 255);
+	font-size: 15px;
+	transition-duration: 3s;
+}
+
+.Button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ContainerKlok{
+	margin: auto;
+	padding: 10px;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.Klok{
+	text-align: center;
+	font-family: Arial;
+	font-size: 40px;
+	color: rgb(255, 255, 255, 0);
+	margin: 10px;
+}
+
+.Klok h2{
+	font-size: 20px;
+	color: rgb(255, 255, 255);
+}
+
+#Klok{
+	transition-duration: 3s;
+}
+
+#Image{
+	width: 300px;
+	margin: 20px;
+	transition-duration: 3s;
+}
+
+
+/*Tablet*/
+@media only screen and (min-width: 800px){
+	#Button{
+		font-size: 30px;
+		padding: 15px;
+	}
+
+	#Image{
+		width: 400px;
+		margin: 20px;
+	}
+}
+
+/*Desktop klein*/
+@media only screen and (min-width: 1000px){
+	.ContainerKlok{
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+
+	.Button{
+		font-size: 20px;
+		padding: 15px;
+		margin-bottom: 10px;
+	}
+
+	.Klok{
+		font-size: 50px;
+	}
+
+	.Klok h2{
+		font-size: 30px;
+	}
+
+	#Image{
+		width: 450px;
+		margin: 20px;
+	}
+}
+
+/*Desktop groot*/
+@media only screen and (min-width: 1200px){
+	img{
+		width: 300px;
+		margin: 20px;
+	}
+
+	#Image{
+		width: 500px;
+		margin: 20px;
+	}
+}
+
+
